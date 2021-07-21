@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/reset.css" />
+    <link rel="stylesheet" href="static/css/app.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+      defer
+    ></script>
+    <script src="static/js/modale.js" defer></script>
+    <script src="static/js/moviedb.js" defer></script>
+    <script src="static/js/app.js" defer></script>
+    <title>Just Stream It</title>
+  </head>
+  <body>
+    <div id="modale">
+      <div id="modale-content">
+        <img id="movie-image" src="" alt="movie img">
+        <p id="movie-title"></p>
+        <p id="movie-resume"></p>
+        <p id="movie-date"></p>
+        <p id="movie-rate"></p>
+        <p id="movie-score"></p>
+        <p id="movie-actors"></p>
+        <p id="movie-real"></p>
+        <p id="movie-country"></p>
+        <p id="movie-duration"></p>
+        <p id="movie-box-office"></p>
+        <button id="close-modale">Close</button>
+      </div>
+    </div>
+    <div id="content">
+        <div id="navbar">Navbar</div>
+        <div id="best-movie">
+          <div id="title">BestMovieEver</div>
+          <img src="" alt="" id="banner">
+          <div id="button"><button>Play</button></div>
+        </div>
+        <div class="categorie">
+            <h2>Film de comedie</h2>
+            <div class="comedie container">
+                <div class="left-arrow"></div>
+                <div class="movie-container">
+
+                </div>
+                <div class="right-arrow"></div>
+            </div>
+        </div>
+        <div class="categorie">
+            <h2>Film par note</h2>
+            <div class="rate container">
+                <div class="left-arrow"></div>
+                <div class="movie-container">
+
+                </div>
+                <div class="right-arrow"></div>
+            </div>
+        </div>
+        <div class="categorie">
+            <h2>Film d'horreur</h2>
+            <div class="horror container">
+                <div class="left-arrow"></div>
+                <div class="movie-container">
+                  
+                </div>
+                <div class="right-arrow"></div>
+            </div>
+        </div>
+        <div id="footer">Je suis le pied</div>
+    </div>
+  </body>
+</html>
