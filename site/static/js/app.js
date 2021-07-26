@@ -1,7 +1,7 @@
 let comedieIndex = 0;
 let horrorIndex = 0;
 let rateIndex = 0;
-let length = 3;
+let length = 5;
 
 let leftRate = document.querySelector(".rate .left-arrow");
 let rightRate = document.querySelector(".rate .right-arrow");

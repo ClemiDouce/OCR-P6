@@ -18,58 +18,92 @@
   <body>
     <div id="modale">
       <div id="modale-content">
-        <img id="movie-image" src="" alt="movie img">
-        <p id="movie-title"></p>
-        <p id="movie-resume"></p>
-        <p id="movie-date"></p>
-        <p id="movie-rate"></p>
-        <p id="movie-score"></p>
-        <p id="movie-actors"></p>
-        <p id="movie-real"></p>
-        <p id="movie-country"></p>
-        <p id="movie-duration"></p>
-        <p id="movie-box-office"></p>
-        <button id="close-modale">Close</button>
+        <div id="left">
+          <img id="movie-image" src="" alt="movie img" />
+          <h1 id="movie-title"></h1>
+          <p id="movie-resume"></p>
+        </div>
+        <div id="right">
+          <div id="movie-info">
+            <p>
+              <span class="label">Date de sortie :</span>
+              <span id="movie-date"></span>
+            </p>
+            <p>
+              <span class="label">Classement :</span>
+              <span id="movie-rate"></span>
+            </p>
+            <p>
+              <span class="label">Note :</span> <span id="movie-score"></span>
+            </p>
+            <p>
+              <span class="label">Acteurs :</span>
+              <span id="movie-actors"></span>
+            </p>
+            <p>
+              <span class="label">Realisateur :</span>
+              <span id="movie-real"></span>
+            </p>
+            <p>
+              <span class="label">Pays d'origine :</span>
+              <span id="movie-country"></span>
+            </p>
+            <p>
+              <span class="label">Durée </span><span id="movie-duration"></span>
+            </p>
+            <p>
+              <span class="label">Box office :</span>
+              <span id="movie-box-office"></span>
+            </p>
+          </div>
+          <button id="close-modale">Close</button>
+        </div>
       </div>
     </div>
     <div id="content">
-        <div id="navbar">Navbar</div>
-        <div id="best-movie">
-          <div id="title">BestMovieEver</div>
-          <img src="" alt="" id="banner">
-          <div id="button"><button>Play</button></div>
+      <div id="navbar">
+        <h1>Just Stream It</h1>
+        <a href="">Top</a>
+        <a href="">Comedies</a>
+        <a href="">Horreur</a>
+      </div>
+      <div id="best-movie">
+        <div id="title">BestMovieEver</div>
+        <img src="" alt="" id="banner" />
+        <div id="button"><button>Play</button></div>
+      </div>
+      <div class="categorie">
+        <h2>Mieux notés</h2>
+        <div class="rate container">
+          <img
+            class="left-arrow"
+            src="static/img/white_arrow_left.png"
+            alt=""
+          />
+          <div class="movie-container"></div>
+          <img
+            class="right-arrow"
+            src="static/img/white_arrow_right.png"
+            alt=""
+          />
         </div>
-        <div class="categorie">
-            <h2>Film de comedie</h2>
-            <div class="comedie container">
-                <div class="left-arrow"></div>
-                <div class="movie-container">
-
-                </div>
-                <div class="right-arrow"></div>
-            </div>
+      </div>
+      <div class="categorie">
+        <h2>Comedies</h2>
+        <div class="comedie container">
+          <img class="left-arrow" src="static/img/white_arrow_left.png" alt="" />
+          <div class="movie-container"></div>
+          <img class="right-arrow" src="static/img/white_arrow_right.png" alt="" />
         </div>
-        <div class="categorie">
-            <h2>Film par note</h2>
-            <div class="rate container">
-                <div class="left-arrow"></div>
-                <div class="movie-container">
-
-                </div>
-                <div class="right-arrow"></div>
-            </div>
+      </div>
+      <div class="categorie">
+        <h2>Horreurs</h2>
+        <div class="horror container">
+          <img class="left-arrow" src="static/img/white_arrow_left.png" alt="" />
+          <div class="movie-container"></div>
+          <img class="right-arrow" src="static/img/white_arrow_right.png" alt="" />
         </div>
-        <div class="categorie">
-            <h2>Film d'horreur</h2>
-            <div class="horror container">
-                <div class="left-arrow"></div>
-                <div class="movie-container">
-                  
-                </div>
-                <div class="right-arrow"></div>
-            </div>
-        </div>
-        <div id="footer">Je suis le pied</div>
+      </div>
     </div>
   </body>
 </html>

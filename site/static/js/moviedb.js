@@ -12,19 +12,19 @@ async function getMovieInfo(movieUrl) {
     let res = await axios.get(movieUrl);
     let data = res.data;
     let movieInfo = {
-        title: data.title,
-        year: data.year,
-        resume: data.resume,
-        score: data.imdb_score,
-        rated: data.rated,
-        duration: `${Math.floor(data.duration/60)}H${data.duration%60}`,
-        real: data.directors,
-        genre: data.genres,
-        country: data.countries,
-        actors: data.actors,
-        boxOffice: data.worldwide_gross_income,
-        imgUrl: data.image_url
-    }
+      title: data.title,
+      year: data.year,
+      resume: data.description,
+      score: data.imdb_score,
+      rated: data.rated,
+      duration: `${Math.floor(data.duration / 60)}H${data.duration % 60}`,
+      real: data.directors,
+      genre: data.genres,
+      country: data.countries,
+      actors: data.actors,
+      boxOffice: data.worldwide_gross_income,
+      imgUrl: data.image_url,
+    };
     return movieInfo
 }
 
