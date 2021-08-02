@@ -41,26 +41,26 @@ async function getMovieList(movieUrl) {
 }
 
 function createMovie(movieInfo, parentNode) {
-    let newMovie = document.createElement('div');
-    newMovie.classList.add('movie', 'hide')
-    let img = document.createElement('img');
-    img.setAttribute('src', movieInfo.imgUrl)
-    newMovie.appendChild(img);
-    newMovie.addEventListener('click', () => {
-        showModal(movieInfo);
-    })
-    parentNode.appendChild(newMovie)
+  let newMovie = document.createElement("article");
+  newMovie.classList.add("movie", "hide");
+  let img = document.createElement("img");
+  img.setAttribute("src", movieInfo.imgUrl);
+  newMovie.appendChild(img);
+  newMovie.addEventListener("click", () => {
+    showModal(movieInfo);
+  });
+  parentNode.appendChild(newMovie);
 }
 
 async function setBestMovie(movieInfo) {
-    let title = bestMovieContainer.querySelector('#title')
-    title.innerText = movieInfo.title
-    let banner = bestMovieContainer.querySelector('#banner')
-    banner.setAttribute('src', movieInfo.imgUrl)
-    let button = bestMovieContainer.querySelector('#button')
-    button.addEventListener('click', () => {
-        showModal(movieInfo)
-    })
+  let title = bestMovieContainer.querySelector("#info h1");
+  title.innerText = movieInfo.title;
+  let banner = bestMovieContainer.querySelector("#banner");
+  banner.setAttribute("src", movieInfo.imgUrl);
+  let button = bestMovieContainer.querySelector("#best-movie #info button");
+  button.addEventListener("click", () => {
+    showModal(movieInfo);
+  });
 }
 
 async function getGenreMovie(genreUrl, container) {

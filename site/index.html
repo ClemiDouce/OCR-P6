@@ -61,19 +61,23 @@
       </div>
     </div>
     <div id="content">
-      <div id="navbar">
+      <header id="navbar">
         <h1>Just Stream It</h1>
-        <a href="">Top</a>
-        <a href="">Comedies</a>
-        <a href="">Horreur</a>
-      </div>
-      <div id="best-movie">
-        <div id="title">BestMovieEver</div>
+        <div class="links">
+          <a href="#rate-movies">Top</a>
+          <a href="#comedie-movies">Comedies</a>
+          <a href="#horror-movies">Horreur</a>
+        </div>
+      </header>
+      <section id="best-movie">
+        <div id="info">
+          <h1>Hopeful Notes</h1>
+          <button>Play</button>
+        </div>
         <img src="" alt="" id="banner" />
-        <div id="button"><button>Play</button></div>
-      </div>
-      <div class="categorie">
-        <h2>Mieux notés</h2>
+      </section>
+      <section id="rate-movies" class="categorie">
+        <h2>Les mieux notés</h2>
         <div class="rate container">
           <img
             class="left-arrow"
@@ -87,23 +91,42 @@
             alt=""
           />
         </div>
-      </div>
-      <div class="categorie">
+      </section>
+      <section id="comedie-movies" class="categorie">
         <h2>Comedies</h2>
         <div class="comedie container">
-          <img class="left-arrow" src="static/img/white_arrow_left.png" alt="" />
+          <img
+            class="left-arrow"
+            src="static/img/white_arrow_left.png"
+            alt=""
+          />
           <div class="movie-container"></div>
-          <img class="right-arrow" src="static/img/white_arrow_right.png" alt="" />
+          <img
+            class="right-arrow"
+            src="static/img/white_arrow_right.png"
+            alt=""
+          />
         </div>
-      </div>
-      <div class="categorie">
+      </section>
+      <section id="horror-movies" class="categorie">
         <h2>Horreurs</h2>
         <div class="horror container">
-          <img class="left-arrow" src="static/img/white_arrow_left.png" alt="" />
+          <img
+            class="left-arrow"
+            src="static/img/white_arrow_left.png"
+            alt=""
+          />
           <div class="movie-container"></div>
-          <img class="right-arrow" src="static/img/white_arrow_right.png" alt="" />
+          <img
+            class="right-arrow"
+            src="static/img/white_arrow_right.png"
+            alt=""
+          />
         </div>
-      </div>
+      </section>
     </div>
+    <footer>
+      <p>Made with 💗 by Mathieu Ducournau</p>
+    </footer>
   </body>
 </html>
