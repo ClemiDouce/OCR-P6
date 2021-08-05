@@ -12,6 +12,11 @@ const modaleDuration = modale.querySelector('#movie-duration');
 const modaleBoxOffice = modale.querySelector('#movie-box-office');
 let closeButton = modale.querySelector('#close-modale');
 
+
+/**
+ * Display the modale with movie's infos
+ * @param {Object} movieInfo Movie's infos to display in the modale
+ */
 function showModal(movieInfo) {
     modaleImg.setAttribute('src', movieInfo.imgUrl)
     modaleTitle.innerText = movieInfo.title;
@@ -27,6 +32,9 @@ function showModal(movieInfo) {
     modale.style.display = "block";
 }
 
+/**
+ * Hide the modal
+ */
 function closeModal() {
     modale.style.display = "none";
 }
