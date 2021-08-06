@@ -105,7 +105,7 @@ div#content {
             justify-content: space-around;
             align-items: center;
 
-            h1 {
+            h2 {
                 text-align: center;
                 padding: 30px;
                 width: 80%;
@@ -185,9 +185,17 @@ footer {
     background-color: $red-color;
     margin: auto;
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: $font;
+    align-items: center;
 
     p {
-        font-family: $font;
         padding: 20px;
+    }
+
+    a {
+        margin-right: 10px;
+        color: $grey-color;
     }
 }

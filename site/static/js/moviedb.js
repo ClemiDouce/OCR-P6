@@ -15,7 +15,7 @@ const actionContainer = document.querySelector(".action .movie-container");
 const bestMovieContainer = document.querySelector("#best-movie");
 
 /**
- * Return movie info
+ * Return movie info from an URL
  * @param {String} movieUrl Url of the movie
  * @return {Object}         Movie info
  */
@@ -77,7 +77,7 @@ function createMovie(movieInfo, parentNode) {
  * @param {Object} movieInfo Movie infos
  */
 async function setBestMovie(movieInfo) {
-  let title = bestMovieContainer.querySelector("#info h1");
+  let title = bestMovieContainer.querySelector("#info h2");
   title.innerText = movieInfo.title;
   let banner = bestMovieContainer.querySelector("#banner");
   banner.setAttribute("src", movieInfo.imgUrl);
